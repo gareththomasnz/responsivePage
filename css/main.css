@@ -1,0 +1,524 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video{
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    background: url( '../img/background.jpg' ) center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    color: #fff;
+}
+
+a, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.footer-container,
+.main aside {
+    background: #111;
+    border-top: 20px solid #333;
+}
+
+.main aside {
+    position: fixed;
+    right: 3%;
+}
+.main aside ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.main aside li {
+    float: left;
+    margin-right: 10px;
+}
+.main aside li input[type="text"] {
+    width: 2em;
+    text-align: center;
+}
+
+.header-container{
+    background: url( '../img/JOU_02_Daarken_Header.jpg' ) top center no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header-container hgroup,
+.header-container hgroup img {
+    float: left;
+}
+.header-container h1 {
+    display: block;
+    float: none;
+    padding-bottom: 20px;
+    text-shadow: 3px 3px 1px #111;
+    font-size: 1.7em;
+    -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+    position: relative;
+    top: 20px;
+}
+.header-container hgroup img {
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+.header-container.cbp-af-header-shrink {
+    background-position: center;
+}
+.header-container.cbp-af-header-shrink hgroup img {
+    display: none;
+}
+
+.header-container.cbp-af-header-shrink h1 {
+    padding-bottom: 0px;
+    font-size: 1.2em;
+    position: static;
+}
+
+.title {
+    color: white;
+}
+
+.main-container {
+    padding-top: 200px;
+}
+
+.main-container img {
+    display: block;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 10px;
+    background: #efefef;
+    -webkit-box-shadow: 0 5px 10px #333;
+    -moz-box-shadow: 0 5px 10px #333;
+    box-shadow: 0 5px 10px #333;
+}
+
+button {
+    background: #555;
+    color: white;
+    padding: 3px 7px;
+    border: 1px solid #000;
+}
+button:hover {
+    background: #333;
+}
+
+footer ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+footer li {
+    padding: 0px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #111;
+}
+
+nav a:hover,
+nav a:visited {
+    background: #333;
+}
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 20px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    .main-container {
+        padding-top: 250px;
+    }
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin-top: 119px;
+        float: right;
+    }
+
+    .cbp-af-header-shrink nav {
+        margin-top: 0;
+    }
+    .cbp-af-header-shrink nav a {
+        padding: 17px 2%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main aside {
+        float: none;
+        margin: auto;
+        display: block;
+        clear: both;
+        padding: 20px;
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 837px) {
+    nav {
+        float: none;
+        clear: both;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container {
+        padding-top: 380px;
+    }
+}
+
+@media only screen and (min-width: 768px and max-width: 837px) {
+    .main-container {
+        padding-top: 350px;
+    }
+}
+@media only screen and (min-width: 480px and max-width: 768px) {
+    .main-container {
+        padding-top: 250px;
+    }
+}
+
+@media only screen and (min-width: 837px) {
+    .main-container {
+        padding-top: 200px;
+    }
+    nav {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
